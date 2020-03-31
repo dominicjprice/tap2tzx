@@ -40,7 +40,7 @@ void ChangeFileExtension(char *str, char *ext)
     // Changes the File Extension of String *str to *ext
     int n, m;
     n = strlen(str);
-    while (str[n] != '.')
+    while (str[n] != '.' && n>0)
         n--;
     n++;
     str[n] = 0;
